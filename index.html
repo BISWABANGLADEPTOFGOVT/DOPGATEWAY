@@ -8,12 +8,10 @@
 	JotForm.singleProduct = false;
 	JotForm.newPaymentUIForNewCreatedForms = false;
 	JotForm.newPaymentUI = true;
-	
+	JotForm.submitError="jumpToFirstError";
 
 	JotForm.init(function(){
 	/*INIT-START*/
-JotForm.initCaptcha('input_62');
-$('input_62_reload').observe('click',function(){ JotForm.reloadCaptcha('input_62') })
       JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
       setTimeout(function() {
           JotForm.initMultipleUploads();
@@ -21,9 +19,9 @@ $('input_62_reload').observe('click',function(){ JotForm.reloadCaptcha('input_62
 	/*INIT-END*/
 	});
 
-   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"heading","qid":"59","text":"Examination Fees","type":"control_head"},null,{"name":"input61","qid":"61","text":"*Before Submit The Application Form Must Check The Preview And All Column Carefully, If Candidate Required To Paying The Application Fee Must Submit. If You Have Not the Required Application Fees Your Form is Not Completed. Take a Print Out of Final Submitted Form.","type":"control_text"},{"description":"","name":"pleaseVerify","qid":"62","text":"Please verify that you are human","type":"control_captcha"},null,null,null,null,{"name":"input67","qid":"67","text":"*Verify captcha after payment sucess.","type":"control_text"},{"description":"","name":"uploadPayment","qid":"68","subLabel":"after payment examination fees upload payment transaction details","text":"Upload Payment details","type":"control_fileupload"},null,null,null,null,null,null,null,null,null,null,null,{"name":"submit80","qid":"80","text":"Submit","type":"control_button"},{"name":"input81","qid":"81","text":"                                \nA\u002FC Holder Name - BISWA BANGLA MARKETING CORPORATION               \nA\u002FC Number - 2223330037260853IFSC - RATN0VAAPISBANK NAME - RBL","type":"control_text"},null,null,{"name":"payThrough","qid":"84","text":" *PAY THROUGH IMPS*","type":"control_head"},{"name":"divider","qid":"85","text":"Divider","type":"control_divider"},{"name":"divider86","qid":"86","text":"Divider","type":"control_divider"}]);
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"heading","qid":"59","text":"Examination Fees","type":"control_head"},null,{"name":"input61","qid":"61","text":"*Before Submit The Application Form Must Check The Preview And All Column Carefully, If Candidate Required To Paying The Application Fee Must Submit. If You Have Not the Required Application Fees Your Form is Not Completed. Take a Print Out of Final Submitted Form.","type":"control_text"},null,null,null,null,null,{"name":"input67","qid":"67","text":"*Verify captcha after payment sucess.","type":"control_text"},{"description":"","name":"uploadPayment","qid":"68","subLabel":"after payment examination fees upload payment transaction details","text":"Upload Payment details","type":"control_fileupload"},null,null,null,null,null,null,null,null,null,null,null,null,{"name":"input81","qid":"81","text":"                                \nA\u002FC Holder Name - BISWA BANGLA MARKETING CORPORATION               \nA\u002FC Number - 2223330037260853IFSC - RATN0VAAPISBANK NAME - RBL","type":"control_text"},null,null,{"name":"payThrough","qid":"84","text":" *PAY THROUGH IMPS*","type":"control_head"},{"name":"divider","qid":"85","text":"Divider","type":"control_divider"},{"name":"divider86","qid":"86","text":"Divider","type":"control_divider"},null,{"name":"submit","qid":"88","text":"Submit","type":"control_button"}]);
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"heading","qid":"59","text":"Examination Fees","type":"control_head"},null,{"name":"input61","qid":"61","text":"*Before Submit The Application Form Must Check The Preview And All Column Carefully, If Candidate Required To Paying The Application Fee Must Submit. If You Have Not the Required Application Fees Your Form is Not Completed. Take a Print Out of Final Submitted Form.","type":"control_text"},{"description":"","name":"pleaseVerify","qid":"62","text":"Please verify that you are human","type":"control_captcha"},null,null,null,null,{"name":"input67","qid":"67","text":"*Verify captcha after payment sucess.","type":"control_text"},{"description":"","name":"uploadPayment","qid":"68","subLabel":"after payment examination fees upload payment transaction details","text":"Upload Payment details","type":"control_fileupload"},null,null,null,null,null,null,null,null,null,null,null,{"name":"submit80","qid":"80","text":"Submit","type":"control_button"},{"name":"input81","qid":"81","text":"                                \nA\u002FC Holder Name - BISWA BANGLA MARKETING CORPORATION               \nA\u002FC Number - 2223330037260853IFSC - RATN0VAAPISBANK NAME - RBL","type":"control_text"},null,null,{"name":"payThrough","qid":"84","text":" *PAY THROUGH IMPS*","type":"control_head"},{"name":"divider","qid":"85","text":"Divider","type":"control_divider"},{"name":"divider86","qid":"86","text":"Divider","type":"control_divider"}]);}, 20); 
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"heading","qid":"59","text":"Examination Fees","type":"control_head"},null,{"name":"input61","qid":"61","text":"*Before Submit The Application Form Must Check The Preview And All Column Carefully, If Candidate Required To Paying The Application Fee Must Submit. If You Have Not the Required Application Fees Your Form is Not Completed. Take a Print Out of Final Submitted Form.","type":"control_text"},null,null,null,null,null,{"name":"input67","qid":"67","text":"*Verify captcha after payment sucess.","type":"control_text"},{"description":"","name":"uploadPayment","qid":"68","subLabel":"after payment examination fees upload payment transaction details","text":"Upload Payment details","type":"control_fileupload"},null,null,null,null,null,null,null,null,null,null,null,null,{"name":"input81","qid":"81","text":"                                \nA\u002FC Holder Name - BISWA BANGLA MARKETING CORPORATION               \nA\u002FC Number - 2223330037260853IFSC - RATN0VAAPISBANK NAME - RBL","type":"control_text"},null,null,{"name":"payThrough","qid":"84","text":" *PAY THROUGH IMPS*","type":"control_head"},{"name":"divider","qid":"85","text":"Divider","type":"control_divider"},{"name":"divider86","qid":"86","text":"Divider","type":"control_divider"},null,{"name":"submit","qid":"88","text":"Submit","type":"control_button"}]);}, 20); 
 </script>
 <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
 <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/defaultV2.css?v=adf8d04
@@ -567,7 +565,8 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
     /* Injected CSS Code */
 </style>
 
-
+<form class="jotform-form" action="https://submit.jotform.com/submit/231395074061452" method="post" enctype="multipart/form-data" name="form_231395074061452" id="231395074061452" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231395074061452" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
     <ul class="form-section page-section">
       <li id="cid_59" class="form-input-wide" data-type="control_head">
         <div class="form-header-group  header-default">
@@ -630,7 +629,6 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
           </div>
         </div>
       </li>
-      
       <li class="form-line" data-type="control_text" id="id_67">
         <div id="cid_67" class="form-input-wide" data-layout="full">
           <div id="text_67" class="form-html" data-component="text" tabindex="0">
@@ -638,21 +636,12 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
           </div>
         </div>
       </li>
-	    <li class="form-line jf-required" data-type="control_captcha" id="id_62"><label class="form-label form-label-top form-label-auto" id="label_62" for="input_62"> Please verify that you are human<span class="form-required">*</span> </label>
-        <div id="cid_62" class="form-input-wide jf-required" data-layout="full">
-          <div class="form-captcha" data-component="captcha"><label for="input_62"><img alt="Captcha - Reload if not displayed" id="input_62_captcha" class="form-captcha-image" style="background:url(https://cdn.jotfor.ms/images/loader-big.gif) no-repeat center" src="https://cdn.jotfor.ms/images/blank.gif" width="150" height="41" /></label>
-            <div style="white-space:nowrap"><input type="text" id="input_62" class="form-textbox validate[required]" name="captcha" style="width:130px" required="" /><img src="https://cdn.jotfor.ms/images/reload.png" alt="Reload" style="cursor:pointer;vertical-align:middle" id="input_62_reload" /><input type="hidden" name="captcha_id" id="input_62_captcha_id" value="0" /></div>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_80">
-        <div id="cid_80" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_80" type="submit" href="https://biswabangladeptofgovt.github.io/THANK-YOU-PAGE/" data-component="button" data-content="">Submit</button></div>
+      <li class="form-line" data-type="control_button" id="id_88">
+        <div id="cid_88" class="form-input-wide" data-layout="full">
+          <p><span style="font-size: 24pt;"><strong><a href="https://biswabangladeptofgovt.github.io/THANK-YOU-PAGE/" target="_blank" rel="nofollow">SUBMIT NOW</a></strong></span></p>
         </div>
       </li>
       <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
     </ul>
   </div>
- 
-</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.42011"></script>
-<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.42011"></script>
+  
